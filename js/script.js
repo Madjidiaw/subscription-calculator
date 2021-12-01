@@ -1,4 +1,5 @@
-// Your JS code here
+/* JS Code for DOM manipulation */
+
 var subTypeElement = document.querySelector("#subscription");
 var subDurationElement = document.querySelector("#months");
 var result = document.querySelector(".result");
@@ -7,13 +8,11 @@ var subDuration = 1;
 
 subTypeElement.addEventListener("change", function (e) {
   subType = e.target.value;
-  //console.log(subType);
   updateSubscriptionDiv();
 });
 
 subDurationElement.addEventListener("change", function (e) {
   subDuration = Number(e.target.value);
-  //console.log(subDuration);
   updateSubscriptionDiv();
 });
 
